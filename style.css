@@ -20,8 +20,9 @@ hr {
    overflow-y: scroll;
     border-right: rgba(128, 128, 128, 0.562) 3px solid;
     background-color: white;
-    z-index: 2;
+    z-index: 11;
 }
+
 .logo {
     position: relative;
     
@@ -70,6 +71,7 @@ hr {
 /* CONTENT */
 .profilfirst{
 position: relative;
+width: 20vw;
 left: 2vw;
 top: 1.5vw;
 }
@@ -96,7 +98,7 @@ top: 1.5vw;
     .contentfirstpost {
         width: 65%;
         position: relative;
-        font-size: 26pt;
+        font-size: 2vw;
         left: 2vw;
     }
     .contentsecondpost {
@@ -113,11 +115,11 @@ top: 1.5vw;
     .answer {
         width: 60vw;
         display: flex;
-        font-size: 20pt;
+        font-size: 2vw;
     }
     .ppboriosi {
         margin-left: 20px;
-        width: 70px; height: 70px;
+        width: 5vw; height: 5vw;
     }
    .answertext {
     margin-left: 20px;
@@ -232,4 +234,36 @@ top: 1.5vw;
 .contentprofiles{
     margin-left: 10px;
   
+}
+@media screen and (max-width: 1065px) {
+    .sidebarleft{
+        display: none;
+    }
+    .rightsidebar{
+        display: none;
+    }
+    .topbar {
+        left: 0%;
+        width: 99%;
+    }
+    .content {
+        left: 0%;
+        width: 100%;
+        margin-left: 0px;
+   
+    }
+    .contentfirstpost {
+        width: 99%;
+        font-size: 5vw;
+    }
+    .imagefirstpost{
+        width: 90%;
+      
+    }
+    .profilfirst {
+        width: 50vw;
+    }
+    .answer {
+        display: none;
+    }
 }
